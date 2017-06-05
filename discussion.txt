@@ -1,0 +1,37 @@
+Recursion 
+1. Recursion is a function that replaces a loop by calling the function inside itself incremently, until it progresses to the base case. 
+2. A base case is necessary to define a point where the recursion should stop in the function. Without it, the recursion will go to infinity and error out. 
+
+Graphs
+1. Graphs are a way to represent a system of paths or connections via nodes; they can have relationships that are directed or undirected, and cyclic or acylic (looped around or not).
+2. Trees are specifically acyclic and have heirarchy. All graphs do not have heirarchy, as all trees ARE graphs, but all graphs are not trees. 
+3. A good example of something to model with a graph would be trying to solve a problem of flying from city A to city B in the fastest possible way (or cheapest possible way). 
+
+Performance of Data Structures
+
+Runtimes for the following actions for the table below:
+
+Data Structure      Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array) O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List         O(n)    O(n)    O(1)    O(n)    O(1)    O(n)
+Doubly-Linked List  O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)     X       X      O(1)      X     O(n)     X
+Queue (as LL or DLL) X       X      O(1)      X     O(1)     X
+Stack (Array/LL/DLL) X       X      O(1)      X      X      O(1) 
+Deque (as DLL)       X       X      O(1)    O(1)    O(1)    O(1)
+
+
+Runtime and Memory:
+
+Data Structure          Get         Add         Delete      Iterate     Memory
+Dictionary (Hash Map)   O(1)        O(1)        O(1)        O(n)        medium
+Set (Hash Map)          O(1)        O(1)        O(1)        O(n)        medium             
+Binary Search Tree      O(log n)    O(log n)    O(log n)    O(n)        low
+Tree                    O(n)        O(1)        O(1)        O(n)        low
+
+
+
+Sorting 
+1. In the Bubble Sort alrogithm, two elements in an array are evaluated for comparison, starting with the first two, to push the bigger number to the right side (towards the end). This process is repeated, going back to the left side (the beginning) every time until it is completely sorted from smallest --> biggest. 
+2. In the MergeSort algorithm, the first two elements in two sorted lists are compared and the lower element is appended to an empty list that is created prior to iterating.  After repeating this comparison until the two sorted lists are exhausted, the results list with contain a sorted merged list. 
+3. In the QuickSort algorithm, there is a pivot selected that will be used to compare elements against. Elements will be evaluated and put into a list of lower than pivot, higher than pivot, or equal to pivot. After the process is finished, the sorted lists will be concatenated from lower than pivot, pivot, to higher than pivot. 
